@@ -81,9 +81,9 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: testpostgres_production
-    username: testpostgres
-    password: <%= ENV["TESTPOSTGRES_DATABASE_PASSWORD"] %>
+    database: myapp_production
+    username: myapp
+    password: <%= ENV["MYAPP_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
     database: testpostgres_production_cache
